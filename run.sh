@@ -10,8 +10,6 @@ echo -e "\e[1;32m
                                                                   
                  ATHEX BLACK HAT
 \e[0m"
-sleep 1
-clear
 figlet -c "ATHEX BLACK HAT"
 echo -e "\e[1;32mLoading..\e[0m"
 echo -e "\e[1;32m████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 20%\e[0m	"
@@ -56,7 +54,7 @@ echo -e "\e[1;32m 6) Brute Force Tools \e[0m"
 echo -e "\e[1;32m 7) Phishing Tools \e[0m"
 echo -e "\e[1;32m 8) OS installer \e[0m"
 echo -e "\e[1;32m 9) About \e[0m"
-echo -e "\e[1;32m 10)ATHEX TOOLKIT 50+ TOOLS \e[0m"
+echo -e "\e[1;32m 10)ATHEX TOOLKIT 1500+ TOOLS \e[0m"
 echo -e "\e[1;32m U) UPDATE \e[0m"
 echo -e "\e[1;32m A) Press A for installing All \e[0m"
 echo -e "\e[1;32m X) For Exit \e[0m"
@@ -885,14 +883,98 @@ case $option in
         echo -e "\e[1;32m████████████████████████████████████████████████████████████████████████████████ 100%\e[0m     "
         sleep 1
         clear
-        figlet -c "ATHEX BLACK HAT"
-        echo -e "\e[1;32m <--------------------CREATED BY ATHEX-------------------------------> \e[0m"
-        echo " "
-        echo -e "\e[1;32m <--------------Follow me on Insta--------------------------> \e[0m"
-        echo " "
-        echo -e "\e[1;32m <----------------------------------------------------------> \e[0m"
-        echo " "
-        echo -e "\e[1;32m https://instagram.com/itx_inzi86 \e[0m"           
+        
+        echo -e "\e[1;36m"
+        echo "    ✦           ✦           ✦"
+        echo "       ✦                   ✦"
+        echo "          ✦     ♍     ✦"
+        echo "             ✦       ✦"
+        echo "                ✦"
+        echo -e "\e[0m"
+        sleep 0.5
+        
+        echo -e "\e[1;32m"
+        echo "╔════════════════════════════════════════════════════════════════╗"
+        echo "║                                                                ║"
+        echo "║         🌌 COSMIC PROFILE SYNCHRONIZATION COMPLETE 🌌         ║"
+        echo "║                                                                ║"
+        echo "╚════════════════════════════════════════════════════════════════╝"
+        echo -e "\e[0m"
+        sleep 0.5
+        
+        figlet -c "DIGITAL IDENTITY"
+        echo ""
+        
+        echo -e "\e[1;35m"
+        echo "           ♍ VIRGO CONSTELLATION ACTIVATED ♍"
+        echo "        THE ANALYST | THE PERFECTIONIST | THE ARCHITECT"
+        echo -e "\e[0m"
+        
+        echo -e "\e[1;32m════════════════════════════════════════════════════════════════════\e[0m"
+        
+        sleep 0.3
+        echo -e "\e[1;32m[✦] CODENAME:\e[1;37m          ATHEX BLACK HAT\e[0m"
+        sleep 0.2
+        echo -e "\e[1;32m[✦] ZODIAC PROFILE:\e[1;35m    VIRGO ♍ | EARTH SIGN\e[0m"
+        sleep 0.2
+        echo -e "\e[1;32m[✦] VIRGO TRAITS:\e[1;36m      ANALYTICAL | METHODICAL | PRECISE\e[0m"
+        sleep 0.2
+        echo -e "\e[1;32m[✦] SPECIALIZATION:\e[1;37m    BLACK HAT HACKER\e[0m"
+        sleep 0.2
+        echo -e "\e[1;32m[✦] TOOLSET:\e[1;37m          CLI TOOLS ARCHITECT\e[0m"
+        sleep 0.2
+        echo -e "\e[1;32m[✦] WEB REALM:\e[1;37m        FULL STACK DEVELOPER\e[0m"
+        sleep 0.2
+        echo -e "\e[1;32m[✦] DARK WEB EXPERTISE:\e[1;37m DEEP NET RESEARCHER\e[0m"
+        sleep 0.2
+        echo -e "\e[1;32m[✦] AGE:\e[1;37m              18 YEARS | GEN-Z HACKER\e[0m"
+        sleep 0.2
+        echo -e "\e[1;32m[✦] STATUS:\e[1;33m           ACTIVE & UNDETECTED\e[0m"
+        sleep 0.2
+        echo -e "\e[1;32m[✦] VIRGO POWER:\e[1;35m       CODE PERFECTION | SYSTEM ANALYSIS\e[0m"
+        
+        echo -e "\e[1;32m════════════════════════════════════════════════════════════════════\e[0m"
+        echo ""
+        
+        echo -e "\e[1;36m\"As a Virgo, I don't just hack systems - I perfect them.\""
+        echo -e "\"In every line of code, I seek cosmic precision.\"\e[0m"
+        echo ""
+        
+        echo -e "\e[1;32m    ┌──────────────────────────────────────────────┐"
+        echo "    │    ╔══════════════════════════════════════╗    │"
+        echo "    │    ║   ♍ VIRGO ANALYTICAL MATRIX ♍       ║    │"
+        echo "    │    ╚══════════════════════════════════════╝    │"
+        echo "    │                                                │"
+        echo "    │           ████████████████████████            │"
+        echo "    │           ██  PRECISE  █  ANALYTIC █           │"
+        echo "    │           ████████████████████████            │"
+        echo "    │           ██  VIRGO    ♍  LOGIC    █           │"
+        echo "    │           ████████████████████████            │"
+        echo "    └──────────────────────────────────────────────┘\e[0m"
+        echo ""
+        
+        echo -e "\e[1;35m[♍] VIRGO HACKER PROFILE ANALYSIS:\e[0m"
+        echo -e "\e[1;36m    ┌─────────────────────────────────────────────┐"
+        echo -e "    │  • ANALYTICAL MIND: Sees patterns in chaos    │"
+        echo -e "    │  • PERFECTIONIST: Flawless code execution     │"
+        echo -e "    │  • METHODICAL: Systematic approach to hacking │"
+        echo -e "    │  • DETAIL-ORIENTED: Misses nothing in code    │"
+        echo -e "    │  • PRACTICAL: Earth sign = Grounded in reality│"
+        echo -e "    └─────────────────────────────────────────────┘\e[0m"
+        echo ""
+        
+        echo -e "\e[1;32m[🌌] COSMIC CONNECTION POINT:\e[0m"
+        echo -e "\e[1;36m    ┌─────────────────────────────────────┐"
+        echo -e "    │   📡 INSTAGRAM: @itx_athex86          │"
+        echo -e "    │   🛰️  https://instagram.com/itx_athex86 │"
+        echo -e "    └─────────────────────────────────────┘\e[0m"
+        echo ""
+        
+        echo -e "\e[1;35m[♍] VIRGO WISDOM: \"PERFECTION IN CODE, PRECISION IN EXPLOITS\"\e[0m"
+        echo -e "\e[1;33m[⚡] CYBER INSIGHT: \"MY VIRGO ANALYTICS CAN DECRYPT ANY SYSTEM\"\e[0m"
+        echo ""
+        echo -e "\e[1;32mPress any key to return to the cosmic main menu...\e[0m"
+        read -n 1 -s
         ;;
     10)        
         clear
@@ -903,7 +985,7 @@ case $option in
         ██╔══╝      ╚════╝    ╚════██║██║   ██║██║     ██║██╔══╝     ██║     ╚██╔╝  
         ██║                   ███████║╚██████╔╝╚██████╗██║███████╗   ██║      ██║   
         ╚═╝                   ╚══════╝ ╚═════╝  ╚═════╝╚═╝╚══════╝   ╚═╝      ╚═╝ 
-                                                       Created By ATH3X BL4CK H4T     \e[0m"
+                                Created By ATH3X BL4CK H4T                           \e[0m"
         echo -e "\e[1;32m<----------------------------menu-------------------------->\e[0m"
         echo -e "\e[1;32m1) Location finder\e[0m"
         echo -e "\e[1;32m2) Camera Hacking\e[0m"
@@ -953,7 +1035,8 @@ case $option in
         echo -e "\e[1;32m46) INSTA PHISH (Login Without email pass 2FA\e[0m"
         echo -e "\e[1;32m47) WIFI PENTEST(Auotomated Wifi Pentesting Tool)\e[0m"
         echo -e "\e[1;32m48) CCTV CAMERA PENTESTING TOOL\e[0m"
-        echo -e "\e[1;32m45) ZED-X 250+ Tools\e[0m"
+        echo -e "\e[1;32m49) ZED-X 250+ Tools\e[0m"
+        echo -e "\e[1;32m50) STARK 350+ Tools\e[0m"
         echo -e "\e[1;32mA) install All Tools In one Click\e[0m"
         echo -e "\e[1;32m<-------------------------------------------------------------->\e[0m"
         read -p "Enter an option to continue: " ochoice
@@ -1300,6 +1383,13 @@ case $option in
                 echo -e "\e[1;32m<-------------------------------------------------------------------->\e[0m"
                 echo -e "\e[1;32m<-----------------------Installing ZED-X------------------------->\e[0m"
                 git clone https://github.com/Athexhacker/ZED-X.git
+                ;;  
+            50)	
+                clear
+                figlet -c "ATHEX BLACK HAT"
+                echo -e "\e[1;32m<-------------------------------------------------------------------->\e[0m"
+                echo -e "\e[1;32m<-----------------------Installing STARK------------------------->\e[0m"
+                git clone  https://github.com/Athexhacker/STARK.git
                 ;;
             A)      
                 clear
@@ -1684,6 +1774,7 @@ EOF
         git clone https://github.com/Athexhacker/WI-FI-PENTEST.git
         git clone https://github.com/Athexhacker/CCTV.git
         git clone https://github.com/Athexhacker/ZED-X.git
+        git clone https://github.com/Athexhacker/STARK.git
        
         ;;
     X)
