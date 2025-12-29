@@ -1037,6 +1037,8 @@ case $option in
         echo -e "\e[1;32m48) CCTV CAMERA PENTESTING TOOL\e[0m"
         echo -e "\e[1;32m49) ZED-X 250+ Tools\e[0m"
         echo -e "\e[1;32m50) STARK 350+ Tools\e[0m"
+        echo -e "\e[1;32m51) DARK-GHOST 500+ Tools\e[0m"
+        echo -e "\e[1;32m52) SPY CAM (MOST FASTEST CAM HACKING TOOL) \e[0m"
         echo -e "\e[1;32mA) install All Tools In one Click\e[0m"
         echo -e "\e[1;32m<-------------------------------------------------------------->\e[0m"
         read -p "Enter an option to continue: " ochoice
@@ -1391,6 +1393,20 @@ case $option in
                 echo -e "\e[1;32m<-----------------------Installing STARK------------------------->\e[0m"
                 git clone  https://github.com/Athexhacker/STARK.git
                 ;;
+            51)
+                clear
+                figlet -c "ATHEX BLACK HAT"
+                echo -e "\e[1;32m<-------------------------------------------------------------------->\e[0m"
+                echo -e "\e[1;32m<-----------------------Installing DARK-GHOST------------------------->\e[0m"
+                git clone  https://github.com/Athexhacker/DARK-GHOST.git
+                ;;
+            52)
+                clear
+                figlet -c "ATHEX BLACK HAT"
+                echo -e "\e[1;32m<-------------------------------------------------------------------->\e[0m"
+                echo -e "\e[1;32m<-----------------------Installing SPY-CAM------------------------->\e[0m"
+                git clone  https://github.com/Athexhacker/SPY-CAM.git
+                ;;
             A)      
                 clear
                 figlet -c "ATHEX BLACK HAT"
@@ -1446,6 +1462,7 @@ case $option in
                 git clone https://github.com/Athexhacker/WI-FI-PENTEST.git
                 git clone https://github.com/Athexhacker/CCTV.git
                 git clone https://github.com/Athexhacker/ZED-X.git
+                git clone https://github.com/Athexhacker/DARK-GHOST.git
                 ;;     
             B)     
                 bash run.sh
@@ -1514,9 +1531,9 @@ show_banner() {
     print_color $BLUE "║           🏴‍☠️  UPDATE IN PROGRESS 🏴‍☠️       ║"
     print_color $BLUE "╚══════════════════════════════════════════════╝"
     echo ""
-    print_color $YELLOW "📍 Repository: $REPO_URL"
-    print_color $YELLOW "📍 Branch: $BRANCH"
-    print_color $YELLOW "📍 Target Directory: $PROJECT_DIR"
+    print_color $YELLOW " Repository: $REPO_URL"
+    print_color $YELLOW " Branch: $BRANCH"
+    print_color $YELLOW " Target Directory: $PROJECT_DIR"
     echo ""
     print_color $GREEN "🚀 Starting automated update process..."
     echo ""
@@ -1529,12 +1546,12 @@ update_tool() {
     # Step 1: Remove old files
     print_color $YELLOW "Step 1: Removing old F-SOCIETY files..."
     if [ -d "$PROJECT_DIR" ]; then
-        print_color $YELLOW "📁 Removing existing directory: $PROJECT_DIR"
+        print_color $YELLOW " Removing existing directory: $PROJECT_DIR"
         rm -rf "$PROJECT_DIR" &
         spinner $!
-        print_color $GREEN "✅ Old files removed successfully!"
+        print_color $GREEN "Old files removed successfully!"
     else
-        print_color $GREEN "ℹ️  Fresh installation - no old files to remove"
+        print_color $GREEN " Fresh installation - no old files to remove"
     fi
     
     echo ""
@@ -1546,7 +1563,7 @@ update_tool() {
     spinner $!
     
     if [ $? -eq 0 ]; then
-        print_color $GREEN "✅ Repository cloned successfully!"
+        print_color $GREEN " Repository cloned successfully!"
     else
         print_color $RED "❌ Failed to clone repository!"
         print_color $YELLOW "💡 Please check your internet connection and repository URL"
@@ -1561,10 +1578,10 @@ update_tool() {
     # Check if main script exists and make it executable
     if [ -f "$PROJECT_DIR/$MAIN_SCRIPT" ]; then
         chmod +x "$PROJECT_DIR/$MAIN_SCRIPT"
-        print_color $GREEN "✅ Main script made executable: $MAIN_SCRIPT"
+        print_color $GREEN " Main script made executable: $MAIN_SCRIPT"
     else
-        print_color $YELLOW "⚠️  Main script not found: $MAIN_SCRIPT"
-        print_color $YELLOW "📋 Available scripts in repository:"
+        print_color $YELLOW "  Main script not found: $MAIN_SCRIPT"
+        print_color $YELLOW " Available scripts in repository:"
         find "$PROJECT_DIR" -name "*.sh" -o -name "*.py" | while read file; do
             chmod +x "$file"
             print_color $BLUE "   - $(basename "$file")"
@@ -1574,17 +1591,17 @@ update_tool() {
     # Make all shell scripts executable
     find "$PROJECT_DIR" -name "*.sh" -exec chmod +x {} \; 2>/dev/null &
     spinner $!
-    print_color $GREEN "✅ All scripts made executable!"
+    print_color $GREEN " All scripts made executable!"
     
     echo ""
     
     # Step 4: Show update summary
-    print_color $GREEN "🎉 F-SOCIETY Update Completed Successfully!"
+    print_color $GREEN " F-SOCIETY Update Completed Successfully!"
     echo ""
-    print_color $BLUE "📊 Update Summary:"
-    print_color $BLUE "   📁 Project Location: $(pwd)/$PROJECT_DIR"
-    print_color $BLUE "   🔗 Repository: $REPO_URL"
-    print_color $BLUE "   🎯 Branch: $BRANCH"
+    print_color $BLUE " Update Summary:"
+    print_color $BLUE "    Project Location: $(pwd)/$PROJECT_DIR"
+    print_color $BLUE "    Repository: $REPO_URL"
+    print_color $BLUE "    Branch: $BRANCH"
     echo ""
     
     # Step 5: Run the main script
@@ -1601,7 +1618,7 @@ update_tool() {
         print_color $YELLOW "⚠️  Main script not found. Listing available executables:"
         echo ""
         find . -type f -executable -name "*.sh" -o -name "*.py" | while read file; do
-            print_color $BLUE "➡️  Available: $file"
+            print_color $BLUE " Available: $file"
         done
         echo ""
         print_color $YELLOW "💡 Please run the appropriate script manually from the F-SOCIETY directory"
@@ -1613,29 +1630,29 @@ preflight_checks() {
     print_color $BLUE "🔍 Running pre-flight checks..."
     
     if ! command -v git &> /dev/null; then
-        print_color $RED "❌ Git is not installed. Please install git first:"
+        print_color $RED " Git is not installed. Please install git first:"
         print_color $YELLOW "   sudo apt-get install git   # Debian/Ubuntu"
         print_color $YELLOW "   brew install git           # macOS"
         print_color $YELLOW "   apt install git            # Termux"
         print_color $YELLOW "   yum install git            # CentOS/RHEL"
         exit 1
     else
-        print_color $GREEN "✅ Git is installed"
+        print_color $GREEN " Git is installed"
     fi
     
     # Check internet connectivity
     if command -v curl &> /dev/null; then
         if curl -s --head https://github.com | head -n 1 | grep "200\|302" > /dev/null; then
-            print_color $GREEN "✅ Internet connectivity confirmed"
+            print_color $GREEN " Internet connectivity confirmed"
         else
-            print_color $RED "❌ No internet connectivity!"
+            print_color $RED " No internet connectivity!"
             exit 1
         fi
     elif command -v wget &> /dev/null; then
         if wget -q --spider https://github.com; then
-            print_color $GREEN "✅ Internet connectivity confirmed"
+            print_color $GREEN " Internet connectivity confirmed"
         else
-            print_color $RED "❌ No internet connectivity!"
+            print_color $RED " No internet connectivity!"
             exit 1
         fi
     else
@@ -1662,8 +1679,8 @@ EOF
 
         # Make the update script executable and run it
         chmod +x update-fsociety.sh
-        echo -e "\e[1;32m✅ Update script created successfully!\e[0m"
-        echo -e "\e[1;32m🚀 Running update process...\e[0m"
+        echo -e "\e[1;32m Update script created successfully!\e[0m"
+        echo -e "\e[1;32m Running update process...\e[0m"
         ./update-fsociety.sh
         ;;
     A)
@@ -1775,7 +1792,7 @@ EOF
         git clone https://github.com/Athexhacker/CCTV.git
         git clone https://github.com/Athexhacker/ZED-X.git
         git clone https://github.com/Athexhacker/STARK.git
-       
+        git clone https://github.com/Athexhacker/DARK-GHOST.git
         ;;
     X)
         exit
